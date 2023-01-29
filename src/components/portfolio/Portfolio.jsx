@@ -6,6 +6,7 @@ import IMG3 from '../../assets/portfolio3.jpg'
 import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/portfolio6.jpg'
+import {motion} from "framer-motion"
 
 const data = [
   {
@@ -70,7 +71,12 @@ const Portfolio = () => {
         {
           data.map(({ id, image, title, github, demo }) => {
             return (
-              <article key={id} className="portfolio__item">
+              <motion.article
+                key={id}
+                className="portfolio__item"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.9 }}
+              >
                 <div className="portfolio__item-image">
                   <img src={image} alt={title} />
                 </div>
@@ -79,7 +85,7 @@ const Portfolio = () => {
                   <a href={github} className='btn' target='_blank' rel="noreferrer">Github</a>
                   <a href={demo} className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
                 </div>
-              </article>
+              </motion.article>
             )
           })
         }

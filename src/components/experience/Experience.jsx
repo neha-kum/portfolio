@@ -1,6 +1,8 @@
 import React from 'react'
 import './experience.css'
 import { BsPatchCheckFill} from 'react-icons/bs'
+import { motion } from "framer-motion";
+
 
 const Experience = () => {
   return (
@@ -9,7 +11,11 @@ const Experience = () => {
       <h2>My Experience</h2>
 
       <div className="container experience__container">
-        <div className="experience__frontend">
+        <motion.div 
+        className="experience__frontend"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.9 }}
+        >
           <h3>Frontend Development</h3>
           <div className="experience__content">
 
@@ -64,11 +70,15 @@ const Experience = () => {
 
           </div>
 
-        </div>
+        </motion.div>
 
         {/* end of frontend */}
 
-        <div className="experience__backend">
+        <motion.div 
+        className="experience__backend"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.9 }}
+        >
           <h3>Backend Development</h3>
           <div className="experience__content">
 
@@ -99,7 +109,7 @@ const Experience = () => {
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4>MySQL</h4>
+                <h4>Firebase</h4>
                 <small className='text-light'>Experienced</small>
               </div>
             </article>
@@ -117,7 +127,7 @@ const Experience = () => {
           </div>
 
 
-        </div>
+        </motion.div>
 
       </div>
 

@@ -18,7 +18,7 @@ nav a{
     padding: 0.9rem;
     border-radius: 50%;
     display: flex;
-    color: var(--color-light);   /*this*/
+    color: var(--color-primary);   /*this*/
 }
 
 nav a:hover{
@@ -26,6 +26,6 @@ nav a:hover{
 }
 
 nav a.active{
-    background: var(--color-bg);
+    background: var(--color-primary);
     color: var(--color-white);
 }

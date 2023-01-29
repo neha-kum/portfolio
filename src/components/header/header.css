@@ -41,15 +41,16 @@ header{
 /* me(img) */
 
 .me{
-    background: linear-gradient(var(--color-primary),transparent);
+    /* background: linear-gradient(var(--color-primary),transparent); */
     width: 22rem;
-    height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
+    height: 60rem;
+    /* position: absolute; */
+    /* left: calc(50% - 11rem); */
+    margin : 0 auto;
     margin-top: 4rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    /* padding: 5rem 1.5rem 1.5rem 1.5rem; */
 }
 
 /* scroll down */
