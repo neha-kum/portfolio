@@ -9,6 +9,8 @@ import { motion } from "framer-motion";
 
 
 const Header = () => {
+
+
   return (
  <header>
   <div className="container header__container">

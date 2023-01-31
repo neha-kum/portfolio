@@ -12,29 +12,31 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
+import {motion} from "framer-motion";
+
 const data = [
   {
     avatar: AVTR1,
     name: 'Tine Snow',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum iste possimus repudiandae praesentium placeat culpa dicta. Blanditiis alias veniam quo. Libero obcaecati voluptatem molestias?'
+    review: 'I love the website she designed for me. The UI is so responsive!'
   },
 
   {
     avatar: AVTR2,
     name: 'Shatta Snow',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum iste possimus repudiandae praesentium placeat culpa dicta. Blanditiis alias veniam quo. Libero obcaecati voluptatem molestias?'
+    review: 'She pays so much attention to details! It is almost unbelievable! '
   },
 
   {
     avatar: AVTR3,
     name: 'Kwame Despite',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum iste possimus repudiandae praesentium placeat culpa dicta. Blanditiis alias veniam quo. Libero obcaecati voluptatem molestias?'
+    review: 'Wow! I loved the character she designed for me.'
   },
 
   {
     avatar: AVTR4,
     name: 'Amy McBrown',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum iste possimus repudiandae praesentium placeat culpa dicta. Blanditiis alias veniam quo. Libero obcaecati voluptatem molestias?'
+    review: 'I must say that her UI/UX designing is very professional.'
   },
 
 ]
@@ -45,6 +47,9 @@ const Testimonials = () => {
   <h5>Review from clients</h5>
   <h2>Testimonials</h2>
 
+<motion.div 
+whileHover={{ scale: 1.1 }}
+whileTap={{ scale: 0.9 }}>
   <Swiper className="container testimonials__container"
    modules={[Pagination]}
    spaceBetween={40}
@@ -65,6 +70,7 @@ const Testimonials = () => {
     })
    }
   </Swiper>
+  </motion.div>
   </section>  
   )
 }

@@ -11,6 +11,7 @@ const Services = () => {
       <h2>Services</h2>
 
       <div className="container services__container">
+        
       <motion.article 
         className="service"
         whileHover={{ scale: 1.05 }}
@@ -90,8 +91,7 @@ const Services = () => {
             </li>
 
             <li><BiCheck className='service__list-icon' />
-              <p>Maintenance and support services
-                (SEO)</p>
+              <p>Maintenance and support services</p>
             </li>
           </ul>
         </motion.article>

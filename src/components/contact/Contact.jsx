@@ -51,9 +51,16 @@ const Contact = () => {
         {/* end of contact options */}
 
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Your Full Name' required />
-          <input type="email" name='email' placeholder='Your Email' required />
-          <textarea name="message" id="" rows="7" placeholder='Your Message' required></textarea>
+          <motion.input
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.9 }} type="text" name='name' placeholder='Your Full Name' required />
+          <motion.input
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.9 }} type="email" name='email' placeholder='Your Email' required />
+          <motion.textarea
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.9 }} name="message" id="" rows="7" placeholder='Your Message' required>
+            </motion.textarea>
           <motion.button
             type='submit'
             className='btn btn-primary'

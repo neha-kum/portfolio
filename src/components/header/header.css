@@ -1,4 +1,4 @@
-header{
+.header{
     height: 100vh;
     padding-top: 7rem;
     overflow: hidden;
@@ -42,8 +42,8 @@ header{
 
 .me{
     /* background: linear-gradient(var(--color-primary),transparent); */
-    width: 22rem;
-    height: 60rem;
+    width: auto;
+    height: 35rem;
     /* position: absolute; */
     /* left: calc(50% - 11rem); */
     margin : 0 auto;

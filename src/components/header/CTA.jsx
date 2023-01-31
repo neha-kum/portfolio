@@ -3,6 +3,8 @@ import CV from '../../assets/cv.pdf'
 import { motion } from "framer-motion";
 
 
+
+
 const CTA = () => {
   return (
     <div className='cta'>

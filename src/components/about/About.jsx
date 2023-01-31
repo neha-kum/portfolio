@@ -42,6 +42,7 @@ const About = () => {
 
         <div className="about__content">
           <div className="about__cards">
+            
             <motion.article
               className='about__card'
               whileHover={{ scale: 1.1 }}
