@@ -49,7 +49,7 @@ const About = () => {
               whileTap={{ scale: 0.9 }}>
               <FaAward className='about__icon' />
               <h5>Experience</h5>
-              <small>6+ Months Web Development</small>
+              <small>2yrs+ Web Development</small>
             </motion.article>
 
             <motion.article 
