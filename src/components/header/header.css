@@ -77,11 +77,22 @@
 
 @media screen and (max-width: 600px){
     header{
-        height: 100vh;
+       height: auto;
     }
+
+     .header__container {
+    height: auto;
+  }
+
+      .me {
+    height: auto;
+    margin-top: 2rem;
+  }
 
     .header__socials,.scroll__down{
      display: none;
     }
 }
+
+
 
